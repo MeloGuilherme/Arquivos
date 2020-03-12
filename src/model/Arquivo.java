@@ -8,6 +8,8 @@ public class Arquivo {
 
 	private String nome;
 
+	private String path;
+
 	private Part arq_byte;
 
 	public Arquivo() {
@@ -29,6 +31,14 @@ public class Arquivo {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
 	}
 
 	public Part getArq_byte() {

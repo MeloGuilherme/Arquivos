@@ -1,0 +1,20 @@
+CREATE DATABASE arquivos
+    WITH 
+    OWNER = setec
+    ENCODING = 'UTF8'
+    LC_CTYPE = 'Portuguese_Brazil.1252'
+    CONNECTION LIMIT = -1;
+    
+CREATE TABLE public.arquivo
+(
+    id serial NOT NULL,
+    nome character varying(50) NOT NULL,
+    path character varying(150) NOT NULL,
+    PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+);
+
+ALTER TABLE public.arquivo
+    OWNER to setec;
